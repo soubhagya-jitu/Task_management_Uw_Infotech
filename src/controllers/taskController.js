@@ -38,7 +38,7 @@ const getTask = async(req,res)=> {
 
 const updateTask = async(req,res)=> {
     try {
-        let data = req.query
+        let data = req.body
         let taskId = req.params.taskId
 
         if (validation.isValidBody(data)) return res.status(400).send({ status: false, msg: "Provide all required  details" })

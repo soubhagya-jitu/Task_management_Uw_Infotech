@@ -19,7 +19,7 @@ mongoose.connect("mongodb+srv://manaskumar:iFVJhjYrsH7iars8@cluster0.s4pqkzd.mon
 
 app.use("/", route)
 
-app.listen(3000, () => {
+app.listen(3001, () => {
     console.log("app is running on port 3000")
 })
 
